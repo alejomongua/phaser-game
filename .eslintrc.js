@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    'cypress/globals': true,
   },
   extends: [
     'standard',
@@ -14,6 +15,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
     'html',
+    'cypress',
   ],
   rules: {
     'comma-dangle': [ 1, 'always-multiline' ],
